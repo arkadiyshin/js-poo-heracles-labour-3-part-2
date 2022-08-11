@@ -9,6 +9,7 @@ class Fighter {
     this.image = image;
     this.x = x;
     this.y = y;
+    this.range = 1.00;
   }
 
 
@@ -60,5 +61,9 @@ class Fighter {
   */
   isAlive() {
     return this.life > 0;
+  }
+
+  getRange() {
+    return this.range;
   }
 }
